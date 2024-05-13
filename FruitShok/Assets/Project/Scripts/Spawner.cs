@@ -23,7 +23,17 @@ public class Spawner : MonoBehaviour
             yield return new WaitForSeconds(_q);
 
             int index = Random.Range(0, _items.Length);
-            Instantiate(_items[index]).transform.position= transform.position;
+           // Instantiate(_items[index]).transform.position= transform.position;
+           ItemBase itemCopy = Instantiate(_items[index]);
+
+            Vector3 itemPosition = new Vector3();
+
+            itemCopy.transform.position = Vector3.right * Random.Range(-10, 10);
+            //Одинаковые что то, что это
+            /*Vector3 itemPosition = new Vector3(); 
+            itemPosition.x = Random.Range(-10, 10);
+            itemPosition.y = 0;
+            itemPosition.z = 0;*/
         }
     }
 

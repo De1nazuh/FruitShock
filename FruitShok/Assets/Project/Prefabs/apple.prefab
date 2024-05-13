@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23363714592162624}
   - component: {fileID: 2304130005072906673}
   - component: {fileID: 2605640297118799516}
-  - component: {fileID: 1925296927246375869}
+  - component: {fileID: 4036617228293836209}
   m_Layer: 0
   m_Name: apple
   m_TagString: Untagged
@@ -120,7 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418c3345d1fc9e540826fd39ab84a014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &1925296927246375869
+  _rigidbody: {fileID: 4036617228293836209}
+  _force: 700
+--- !u!54 &4036617228293836209
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
