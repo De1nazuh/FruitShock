@@ -7,7 +7,8 @@ using UnityEngine.TextCore.Text;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private ItemBase[] _items;
-    [SerializeField] private float _q;
+    [SerializeField] private float _q=1;
+
 
     void Start()
     {
@@ -30,8 +31,8 @@ public class Spawner : MonoBehaviour
 
             itemCopy.transform.position = Vector3.right * Random.Range(-10, 10);
             //Одинаковые что то, что это
-            /*Vector3 itemPosition = new Vector3(); 
-            itemPosition.x = Random.Range(-10, 10);
+            
+           /* itemPosition.x = Random.Range(-10, 10);
             itemPosition.y = 0;
             itemPosition.z = 0;*/
         }
