@@ -6,14 +6,14 @@ using UnityEngine;
 
 namespace Project
 {
-    public enum DayType { Usual, Halloween, NewYear }
+    public enum DayType { Normal, Halloween, NewYear }
 
 
     public class GameStateChanger : MonoBehaviour
     {
 
         public bool IsHalloween;
-        public DayType dayType = DayType.Usual;
+        public DayType dayType = DayType.Normal;
 
 
         private void Start()

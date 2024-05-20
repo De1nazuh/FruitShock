@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 namespace Project
 {
@@ -7,6 +9,9 @@ namespace Project
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private float _force=700;
+        public static int count = 0;
+
+       
 
         private void Reset()
         {
@@ -30,8 +35,8 @@ namespace Project
         public virtual void OnCatch()
         {
             Destroy(gameObject);
+            //destroed?.Invoke();
         }
-
     }
 
 }
