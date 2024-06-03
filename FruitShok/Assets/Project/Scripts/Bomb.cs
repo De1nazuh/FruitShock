@@ -8,7 +8,7 @@ namespace Project
         {
             base.OnCatch();
             Debug.Log("-1 score");
-            count--;
+            score=score-2.5f;
         }
 
 

@@ -18,7 +18,7 @@ namespace Project
 
         private void Update()
         {
-            CountText.text = ItemBase.count.ToString();
+            CountText.text = ItemBase.score.ToString();
         }
 
 

@@ -15,8 +15,13 @@ namespace Project {
         private UIBase _shopUI;
 
         private Button _backButton;
+        private Button _swoard1;
+        private Button _swoard2;
+        private Button _swoard3;
 
-        public override void Enter()
+        public override
+            
+            void Enter()
         {
             _uiContainer = Resources.Load<UIContainer>
                 ("Configurations/UIContainer_" + _gameStateChanger.dayType.ToString());
@@ -27,9 +32,28 @@ namespace Project {
 
                 _backButton = _shopUI.transform.Find("BackButton").GetComponent<Button>();
                 _backButton.onClick.AddListener(GoBack);
+                _swoard1 = _shopUI.transform.Find("swoard1").GetComponent<Button>();
+                _swoard1.onClick.AddListener(GoToGamepleay);
+                _swoard2 = _shopUI.transform.Find("swoard2").GetComponent<Button>();
+                _swoard2.onClick.AddListener(GoToGPswoard);
+                _swoard3 = _shopUI.transform.Find("swoard3").GetComponent<Button>();
+                _swoard3.onClick.AddListener(GoToGPswoard2);
             };
 
             
+        }
+        
+        private void GoToGamepleay()
+        {
+            _gameStateChanger.ChangeState(new Gameplay_GameState());
+        }
+        private void GoToGPswoard2()
+        {
+            _gameStateChanger.ChangeState(new GPswoard2());
+        }
+        private void GoToGPswoard()
+        {
+            _gameStateChanger.ChangeState(new GPswoard());
         }
         private void GoBack()
         {

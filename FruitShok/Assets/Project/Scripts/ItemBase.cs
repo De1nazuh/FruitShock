@@ -5,11 +5,11 @@ using UnityEngine.SocialPlatforms.Impl;
 namespace Project
 {
     [RequireComponent (typeof(Rigidbody))]
-    public abstract class ItemBase : MonoBehaviour
+    public abstract class ItemBase : sound
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private float _force=700;
-        public static int count = 0;
+        public static float score = 0;
 
        
 
@@ -36,6 +36,8 @@ namespace Project
         {
             Destroy(gameObject);
             //destroed?.Invoke();
+
+
         }
     }
 
