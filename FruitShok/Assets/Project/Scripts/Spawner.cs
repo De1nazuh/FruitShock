@@ -1,4 +1,5 @@
 ﻿using Project;
+using SO;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -10,7 +11,9 @@ namespace Project
 
     public class Spawner : MonoBehaviour
     {
-        [SerializeField] private ItemBase[] _items;
+        [SerializeField] private ItemList _itemList;
+        [SerializeField] private float _spawnRate;
+        
         [SerializeField] private float _q = 1;
         [SerializeField] private TextMeshProUGUI CountText;
 
@@ -36,9 +39,9 @@ namespace Project
                 //ждать 1 сек
                 yield return new WaitForSeconds(_q);
 
-                int index = Random.Range(0, _items.Length);
+                int index = Random.Range(0, _itemList.items.Length);
                 // Instantiate(_items[index]).transform.position= transform.position;
-                ItemBase itemCopy = Instantiate(_items[index]);
+                ItemBase itemCopy = Instantiate(_itemList.items[index]);
 
                 Vector3 itemPosition = new Vector3();
 

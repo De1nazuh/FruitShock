@@ -5,9 +5,10 @@ using UnityEngine.SocialPlatforms.Impl;
 namespace Project
 {
     [RequireComponent (typeof(Rigidbody))]
-    public abstract class ItemBase : sound
+    public abstract class ItemBase : MonoBehaviour
     {
         [SerializeField] private Rigidbody _rigidbody;
+        [SerializeField] public sound _sound;
         [SerializeField] private float _force=700;
         public static float score = 0;
 
