@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Project/Scripts/Scenes/_init.unity
+    path: Assets/Project/Scenes/_init.unity
     guid: 1b027544d1800034f8b8a17909371bb8
   - enabled: 1
-    path: Assets/Project/Scripts/Scenes/MainMenu.unity
+    path: Assets/Project/Scenes/MainMenu.unity
     guid: cfa654834f6fdc94aad60f41d6175493
   - enabled: 1
-    path: Assets/Project/Scripts/Scenes/GamePlay.unity
+    path: Assets/Project/Scenes/GamePlay.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
-    path: Assets/Project/Scripts/Scenes/ShopScene.unity
+    path: Assets/Project/Scenes/ShopScene.unity
     guid: 595944d3e638f8b46879254991e2d301
   - enabled: 1
-    path: Assets/Project/Scripts/Scenes/Lose_GameState.unity
+    path: Assets/Project/Scenes/Lose_GameState.unity
     guid: 67f347414608a1e4a97bc98ecb9862da
   - enabled: 1
-    path: Assets/Project/Scripts/Scenes/GPswoard.unity
+    path: Assets/Project/Scenes/GPswoard.unity
     guid: c53d124f94faa3a44803ac55188f705f
   - enabled: 1
-    path: Assets/Project/Scripts/Scenes/GPswoard2.unity
+    path: Assets/Project/Scenes/GPswoard2.unity
     guid: 7effaec56002c1d418d677e4ca8f8c68
   m_configObjects: {}
