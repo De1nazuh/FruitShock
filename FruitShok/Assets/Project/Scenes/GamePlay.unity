@@ -603,7 +603,6 @@ GameObject:
   - component: {fileID: 1322902216}
   - component: {fileID: 1322902219}
   - component: {fileID: 1322902215}
-  - component: {fileID: 1322902218}
   - component: {fileID: 1322902220}
   - component: {fileID: 1322902221}
   m_Layer: 0
@@ -625,6 +624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d421679860d5b394585461eabe50ebb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: afef0f126865f9649959a66b103b005f, type: 3}
   _bladePrefab: {fileID: 1501969452112116021, guid: 6fea3b22af2aff2439a84ab6a82f3da8,
     type: 3}
   _cutDistance: 100
@@ -659,24 +660,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1322902218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322902214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df99c43785881874dbb100c8275cd88e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - {fileID: 8300000, guid: 82a43df513d93f54cb3d107fd03dcc7a, type: 3}
-  - {fileID: 8300000, guid: a2423cbf8ed3b4247891c3563621494c, type: 3}
-  _swoardPrefab: {fileID: 3926336833608727901, guid: 87fe10a6f9dcbfa4ebe825ebad90a25f,
-    type: 3}
-  _cutDistance: 100
 --- !u!82 &1322902219
 AudioSource:
   m_ObjectHideFlags: 0

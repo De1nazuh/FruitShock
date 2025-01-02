@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Blade : MonoBehaviour
+public class Blade : sound
 {
     [SerializeField] private GameObject _bladePrefab;
     [SerializeField] private float _cutDistance = 100;
@@ -40,6 +40,7 @@ public class Blade : MonoBehaviour
                 if(Vector3.Distance(_mouseStartPosition, Input.mousePosition) >_cutDistance)
                 {
                     item?.OnCatch();
+                    PlaySound(sounds[0]);
                 }
                    
             }

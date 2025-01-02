@@ -48,6 +48,10 @@ namespace Project
             }
 
             Destroy(gameObject, 5);
+            score = score + 0.5f;
+
+
+
         }
     }
 }
